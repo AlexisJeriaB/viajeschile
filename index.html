@@ -76,6 +76,7 @@
     </header>
 
     <!-- Sección de presentación, utilizando favicons y 3 párrafos (debe desaparecer en tamaños pequeños de pantalla). -->
+    <!-- Tooltips en iconos -->
     <section>
         <div class="container d-none d-sm-block text-white" id="presentacion">
             <div class="row d-flex justify-content-center">
@@ -85,10 +86,11 @@
                     <hr>
                 </div>
 
-
+                <!-- Tooltips en los iconos -->
 
                 <div class="col-sm-4">
-                    <i class="fa-solid fa-plane fa-2x d-block bg-info text-center"></i>
+                    <i class="fa-solid fa-plane fa-2x d-block bg-info text-center" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="tooltip de avioncito"></i>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat corrupti dignissimos beatae,
                         culpa facilis, debitis iusto possimus perferendis eaque magni, ullam aliquam praesentium magnam
                         ipsam facere voluptatibus cumque quis. Earum.
@@ -109,10 +111,12 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat corrupti dignissimos beatae,
                         culpa facilis, debitis iusto possimus perferendis eaque magni, ullam aliquam praesentium magnam
                         ipsam facere voluptatibus cumque quis. Earum.</p>
-                    <i class="fa-solid fa-mountain fa-2x d-block bg-info text-center"></i>
+                    <i class="fa-solid fa-mountain fa-2x d-block bg-info text-center" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="tooltip de Montañita"></i>
                 </div>
                 <div class="col-sm-4">
-                    <i class="fa-sharp fa-solid fa-map-location-dot fa-2x d-block bg-info text-center"></i>
+                    <i class="fa-sharp fa-solid fa-map-location-dot fa-2x d-block bg-info text-center" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="tooltip de Ubicacion"></i>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis dolorum delectus ullam
                         nesciunt, sint sed, ad enim vero, officia commodi aspernatur architecto autem a. Quas voluptatem
                         nulla modi harum?
@@ -132,6 +136,7 @@
 
 
     <!-- Sección de destacados, que muestre 4 cards (tarjetas) con la imagen e información asociada. -->
+    <!-- Se agrego efecto en las imagenes con jQuery -->
     <section>
         <div class="container my-5" id="destacados">
             <div class="row d-flex justify-content-center">
@@ -143,10 +148,10 @@
 
                 <div class="col-sm-3 d-flex justify-content-center mb-3 mb-sm-0">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/card1.jpg" class="card-img-top imgCard" alt="...">
                         <div class="card-body bg-info text-white ">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text bodyCard">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the
                                 card's content.</p>
@@ -156,10 +161,10 @@
 
                 <div class="col-sm-3 d-flex justify-content-center mb-3 mb-sm-0">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/card2.jpg" class="card-img-top imgCard" alt="...">
                         <div class="card-body bg-info text-white ">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text bodyCard">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the
                                 card's content.</p>
@@ -169,10 +174,10 @@
                 <!--  height="180" -->
                 <div class="col-sm-3 d-flex justify-content-center mb-3 mb-sm-0">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/card3.jpg" class="card-img-top imgCard" alt="...">
                         <div class="card-body bg-info text-white ">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text bodyCard">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the
                                 card's content.</p>
@@ -182,10 +187,10 @@
 
                 <div class="col-sm-3 d-flex justify-content-center mb-3 mb-sm-0">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/card4.jpg" class="card-img-top imgCard" alt="...">
                         <div class="card-body bg-info text-white ">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text bodyCard">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the
                                 card's content.</p>
@@ -197,6 +202,7 @@
     </section>
 
     <!-- Sección de formulario de contacto. -->
+    <!-- Se agregfo un Alert en el boton enviar con Jquery -->
 
     <section>
         <div class="container text-white my-5" id="formulario">
@@ -222,7 +228,7 @@
                         <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button class="btn btn-primary" id="enviarMensaje">Enviar</button>
                 </form>
             </div>
         </div>

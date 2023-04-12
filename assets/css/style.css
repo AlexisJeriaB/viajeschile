@@ -4,24 +4,21 @@ body {
     font-size: 300;
 }
 
-/* .menu1 {
-    margin-left: 600px;
-    font-size: 16px;
-    font-weight: 400;
-} */
-
 
 
 i {
     color: white;
 }
 
-
 .imgCarrusel {
     min-height: 25rem;
     max-height: 50rem;
 }
 
+
+.imgCard {
+    max-height: 12rem;
+}
 h2 {
     font-size: 500;
 }

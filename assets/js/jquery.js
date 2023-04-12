@@ -2,20 +2,14 @@
 
 $(document).ready(function () {
     
-    $("#enviarCorreo").click(function(otro){
-        alert("El correo fue enviado correctamente");
+    $("#enviarMensaje").click(function(otro){
+        alert("El mensae fue enviado correctamente");
     });
 
    
-    $("#rojo1, #rojo2").on("dblclick change",function(){
-        $(this).css({
-            "color": "red"
-        });
-	});
 
-
-    $(".tcard").click(function () {
-        $(".pcard").toggle();
+    $(".imgCard").click(function () {
+        $(".bodyCard").toggle();
     });
 
 });
