@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
+    font-size: 300;
 }
 
 
@@ -8,8 +9,17 @@ i {
     color: white;
 }
 
-.imgCard {
-    min-height: 15rem;
 
+.imgCarrusel {
+    min-height: 25rem;
+    max-height: 40rem;
 }
 
+.imgCard {
+    min-height: 12rem;
+    max-height: 12rem;
+}
+
+h2 {
+    font-size: 500;
+}
